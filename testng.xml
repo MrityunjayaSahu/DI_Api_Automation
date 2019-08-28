@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+
+<test name="ANALYSTUSER">
+<parameter name="entitleMents" value="NDWPI"/>
+<parameter name="userType" value="ANALYSTANDPROUSER"/>
+<parameter name="userName" value="ProThomsonCommonUser002@i.ua"/>
+<parameter name="passWord" value="Derwent1!"/>
+  <classes>
+    <class name="com.diapi.automation.search.SearchServices"/>
+  </classes>
+</test>
+
+<test name="PROUSER">
+<parameter name="entitleMents" value="NDWPI"/>
+<parameter name="userType" value="ANALYSTANDPROUSER"/>
+<parameter name="userName" value="sahu.mrityunjaya@clarivate.com"/>
+<parameter name="passWord" value="Derwent1!"/>
+  <classes>
+    <class name="com.diapi.automation.search.SearchServices"/>
+  </classes>
+</test>
+  
+<test name="ExpressTest">
+<parameter name="entitleMents" value="DWPI"/>
+<parameter name="userType" value="EXPRESS"/>
+<parameter name="userName" value="ExpThomsonCommonUser003@i.ua"/>
+<parameter name="passWord" value="Derwent1!"/>
+  <classes>
+    <class name="com.diapi.automation.search.SearchServices"/>
+  </classes>
+</test>
+</suite>
